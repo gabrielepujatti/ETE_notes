@@ -1,0 +1,14 @@
+---
+title: First Semester
+subtitle: This is the index page for the first semester, here all the pages for the first semester courses will be linked.
+page-layout: article
+anchor-sections: false
+listing: 
+    id: first_semester_links
+    template: ../ejs/links.ejs
+    contents: first_semester.yml
+---
+
+::: {#guide-links .column-screen-inset-right style="max-width: 850px;"}
+:::
+

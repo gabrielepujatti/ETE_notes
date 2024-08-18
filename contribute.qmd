@@ -1,0 +1,22 @@
+---
+title: How to contribute
+---
+
+To contribute to this website you can:
+
+* Use GitHub, by accessing the repository at this [link](https://github.com/gabrielepujatti/ETE_notes)
+
+* Let me know via at `gabriele.pujatti@ut-capitle.fr`
+
+If you wish to contribute please follow these general guidelines:
+
+::: {.callout-tip}
+make the README file with the instructions on how to contribute.
+:::
+
+# Random things that I need to remember
+
+To add a new topic, create a folder in the appropriate folder, then go to `first_semester/first_semester.yml` and add the link and label under the appropriate section.
+
+Right now, only [Katex](https://katex.org/) is supported (the default on Quarto), but in case more functionalities are needed more complete (but cumbersome) latex implementations can be used 
+

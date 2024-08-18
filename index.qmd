@@ -1,7 +1,19 @@
 ---
-title: "ETE_notes"
+title: "Home"
 ---
 
-This is a Quarto website.
+This website contains the notes for the M2 Economics Theory and Econometrics at TSE. 
+
+They are mainly maintained by me (Gabriele Pujatti) but everyone is more than welcome to [contribute](contribute.qmd) with corrections and expansions.
+
+::: {.content-hidden}
+Here I should add something related to the fact that I am attending lectures and reading books, and the content I am writing about is based on that.
+:::
+
+:::{.content-hidden}
+Add a way to make the date upload on the last commit
+:::
+
+They have been last updated on XX/XX/XXXX
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

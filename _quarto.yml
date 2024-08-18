@@ -3,18 +3,26 @@ project:
   output-dir: docs
 
 website:
-  title: "Economic Theory and Econometrics: Notes"
+  title: "ETE Notes"
   navbar:
+    background: light
+    title: false
+    collapse-below: lg
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: first_semester/index.qmd
+        text: First Semester
+      - href: second_semester/index.qmd
+        text: Second Semester 
+      - href: contribute.qmd
+        text: Contribute
 
 format:
   html:
+    toc: true
     theme: cosmo
     css: styles.css
-    toc: true
 
 
 

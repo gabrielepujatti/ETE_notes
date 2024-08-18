@@ -1,0 +1,7 @@
+---
+title: Econometrics I
+---
+
+This file is supposed to include the general information about the Econometrics I course.
+
+Maybe deadlines and stuff that can be useful, but it is to be decided. 

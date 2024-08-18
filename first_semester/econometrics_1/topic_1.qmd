@@ -1,0 +1,6 @@
+---
+title: Topic 1
+subtitle: Econometrics I
+---
+
+This is an example of a topic page, that can be used as a template.

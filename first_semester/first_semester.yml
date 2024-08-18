@@ -1,0 +1,48 @@
+- title: Econometrics I
+  subtitle: Prof Giovanni Giorgio
+  links:
+    - text: Presentation
+      href: econometrics_1/presentation.qmd
+    - text: Topic 1
+      href: econometrics_1/topic_1.qmd
+
+
+
+- title: Microeconomics I
+  subtitle: Prof Giovanna Giorgia
+  links:
+    - text: Presentation
+      href: microeconomics_1/presentation.qmd
+    - text: Topic 1
+      href: microeconomics_1/topic_1.qmd
+
+
+
+- title: Macroeconomics I
+  subtitle: Prof Giovanna Giorgia
+  links:
+    - text: Presentation
+      href: macroeconomics_1/presentation.qmd
+    - text: Topic 1
+      href: macroeconomics_1/topic_1.qmd
+
+
+
+- title: Game Theory
+  subtitle: Prof Giovanna Giorgia
+  links:
+    - text: Presentation
+      href: game_theory/presentation.qmd
+    - text: Topic 1
+      href: game_theory/topic_1.qmd
+
+
+- title: Optimization
+  subtitle: Prof Giovanna Giorgia
+  links:
+    - text: Presentation
+      href: optimization/presentation.qmd
+    - text: Topic 1
+      href: optimization/topic_1.qmd
+
+

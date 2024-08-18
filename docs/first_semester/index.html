@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Home – ETE Notes</title>
+<title>First Semester – ETE Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,9 +67,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-first_semester_links .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-links',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-subtitle","listing-links"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-first_semester_links'] = new List('listing-first_semester_links', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -84,19 +143,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./first_semester/index.html"> 
+    <a class="nav-link active" href="../first_semester/index.html" aria-current="page"> 
 <span class="menu-text">First Semester</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./second_semester/index.html"> 
+    <a class="nav-link" href="../second_semester/index.html"> 
 <span class="menu-text">Second Semester</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contribute.html"> 
+    <a class="nav-link" href="../contribute.html"> 
 <span class="menu-text">Contribute</span></a>
   </li>  
 </ul>
@@ -114,11 +173,12 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">First Semester</h1>
+<p class="subtitle lead">This is the index page for the first semester, here all the pages for the first semester courses will be linked.</p>
 </div>
 
 
@@ -135,14 +195,90 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This website contains the notes for the M2 Economics Theory and Econometrics at TSE.</p>
-<p>They are mainly maintained by me (Gabriele Pujatti) but everyone is more than welcome to <a href="./contribute.html">contribute</a> with corrections and expansions.</p>
-<p>They have been last updated on XX/XX/XXXX</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<div id="guide-links" class="column-screen-inset-right" style="max-width: 850px;">
+
+</div>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-first_semester_links">
+<div class="link-cards">
+<div class="card">
+<div class="card-body">
+<section id="econometrics-i" class="level4 card-title">
+<h4 data-anchor-id="econometrics-i">Econometrics I</h4>
+<section id="prof-giovanni-giorgio" class="level6 card-subtitle text-muted">
+<h6 data-anchor-id="prof-giovanni-giorgio">Prof Giovanni Giorgio</h6>
+</section>
+</section>
+<ul>
+<li><a href="../first_semester/econometrics_1/presentation.html">Presentation</a></li>
+<li><a href="../first_semester/econometrics_1/topic_1.html">Topic 1</a></li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<section id="microeconomics-i" class="level4 card-title">
+<h4 data-anchor-id="microeconomics-i">Microeconomics I</h4>
+<section id="prof-giovanna-giorgia" class="level6 card-subtitle text-muted">
+<h6 data-anchor-id="prof-giovanna-giorgia">Prof Giovanna Giorgia</h6>
+</section>
+</section>
+<ul>
+<li><a href="../first_semester/microeconomics_1/presentation.html">Presentation</a></li>
+<li><a href="../first_semester/microeconomics_1/topic_1.html">Topic 1</a></li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<section id="macroeconomics-i" class="level4 card-title">
+<h4 data-anchor-id="macroeconomics-i">Macroeconomics I</h4>
+<section id="prof-giovanna-giorgia-1" class="level6 card-subtitle text-muted">
+<h6 data-anchor-id="prof-giovanna-giorgia-1">Prof Giovanna Giorgia</h6>
+</section>
+</section>
+<ul>
+<li><a href="../first_semester/macroeconomics_1/presentation.html">Presentation</a></li>
+<li><a href="../first_semester/macroeconomics_1/topic_1.html">Topic 1</a></li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<section id="game-theory" class="level4 card-title">
+<h4 data-anchor-id="game-theory">Game Theory</h4>
+<section id="prof-giovanna-giorgia-2" class="level6 card-subtitle text-muted">
+<h6 data-anchor-id="prof-giovanna-giorgia-2">Prof Giovanna Giorgia</h6>
+</section>
+</section>
+<ul>
+<li><a href="../first_semester/game_theory/presentation.html">Presentation</a></li>
+<li><a href="../first_semester/game_theory/topic_1.html">Topic 1</a></li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<section id="optimization" class="level4 card-title">
+<h4 data-anchor-id="optimization">Optimization</h4>
+<section id="prof-giovanna-giorgia-3" class="level6 card-subtitle text-muted">
+<h6 data-anchor-id="prof-giovanna-giorgia-3">Prof Giovanna Giorgia</h6>
+</section>
+</section>
+<ul>
+<li><a href="../first_semester/optimization/presentation.html">Presentation</a></li>
+<li><a href="../first_semester/optimization/topic_1.html">Topic 1</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -163,13 +299,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

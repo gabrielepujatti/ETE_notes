@@ -1,0 +1,9 @@
+---
+title: Second Semester
+---
+
+This is the index page for the second semester, here all the pages for the second semester courses will be linked.
+
+::: {.callout-note}
+This will be done after the first semester is over.
+:::
