@@ -36,7 +36,7 @@
     "href": "contribute.html",
     "title": "How to contribute",
     "section": "",
-    "text": "To contribute to this website you can:\n\nUse GitHub, by accessing the repository at this link\nLet me know via at gabriele.pujatti@ut-capitle.fr\n\nIf you wish to contribute please follow these general guidelines:\n\n\n\n\n\n\nTip\n\n\n\nmake the README file with the instructions on how to contribute.\n\n\n\nRandom things that I need to remember\nTo add a new topic, create a folder in the appropriate folder, then go to first_semester/first_semester.yml and add the link and label under the appropriate section.\nRight now, only Katex is supported (the default on Quarto), but in case more functionalities are needed more complete (but cumbersome) latex implementations can be used"
+    "text": "To contribute to this website you can:\n\nUse GitHub, by accessing the repository at this link\nLet me know via email at gabriele.pujatti@ut-capitole.fr\n\nIf you wish to contribute please follow these general guidelines:\n\n\n\n\n\n\nTip\n\n\n\nmake the README file with the instructions on how to contribute.\n\n\n\nRandom things that I need to remember\nTo add a new topic, create a folder in the appropriate folder, then go to first_semester/first_semester.yml and add the link and label under the appropriate section.\nRight now, only Katex is supported (the default on Quarto), but in case more functionalities are needed more complete (but cumbersome) latex implementations can be used"
   },
   {
     "objectID": "first_semester/econometrics_1/topic_1.html",
@@ -53,7 +53,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "Notes for Economic Theory and Econometrics",
     "section": "",
     "text": "This website contains the notes for the M2 Economics Theory and Econometrics at TSE.\nThey are mainly maintained by me (Gabriele Pujatti) but everyone is more than welcome to contribute with corrections and expansions.\nThey have been last updated on XX/XX/XXXX\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
