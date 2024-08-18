@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Notes for Economic Theory and Econometrics"
 ---
 
 This website contains the notes for the M2 Economics Theory and Econometrics at TSE. 
