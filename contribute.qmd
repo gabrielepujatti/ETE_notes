@@ -6,7 +6,7 @@ To contribute to this website you can:
 
 * Use GitHub, by accessing the repository at this [link](https://github.com/gabrielepujatti/ETE_notes)
 
-* Let me know via at `gabriele.pujatti@ut-capitle.fr`
+* Let me know via email at `gabriele.pujatti@ut-capitole.fr`
 
 If you wish to contribute please follow these general guidelines:
 
