@@ -4,35 +4,51 @@
     "href": "first_semester/index.html",
     "title": "First Semester",
     "section": "",
-    "text": "Econometrics I\n\nProf Giovanni Giorgio\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nMicroeconomics I\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nMacroeconomics I\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nGame Theory\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nOptimization\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\nNo matching items"
+    "text": "Econometrics I\n\nProf Giovanni Giorgio\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nMicroeconomics I\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nMacroeconomics I\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nGame Theory\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nOptimization\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "First Semester"
+    ]
   },
   {
     "objectID": "second_semester/index.html",
     "href": "second_semester/index.html",
     "title": "Second Semester",
     "section": "",
-    "text": "This is the index page for the second semester, here all the pages for the second semester courses will be linked.\n\n\n\n\n\n\nNote\n\n\n\nThis will be done after the first semester is over."
+    "text": "This is the index page for the second semester, here all the pages for the second semester courses will be linked.\n\n\n\n\n\n\nNote\n\n\n\nThis will be done after the first semester is over.",
+    "crumbs": [
+      "Second Semester"
+    ]
   },
   {
     "objectID": "first_semester/econometrics_1/presentation.html",
     "href": "first_semester/econometrics_1/presentation.html",
-    "title": "Econometrics I",
+    "title": "Course Presentation",
     "section": "",
-    "text": "This file is supposed to include the general information about the Econometrics I course.\nMaybe deadlines and stuff that can be useful, but it is to be decided."
+    "text": "This file is supposed to include the general information about the Econometrics I course.\nMaybe deadlines and stuff that can be useful, but it is to be decided.",
+    "crumbs": [
+      "First Semester",
+      "Econometrics 1",
+      "Course Presentation"
+    ]
   },
   {
     "objectID": "contribute.html",
     "href": "contribute.html",
     "title": "How to contribute",
     "section": "",
-    "text": "To contribute to this website you can:\n\ngithub spiegare come\ntell me mettere qualche contatto\n\nIf you wish to contribute please follow these general guidelines\n\n\n\n\n\n\nTip\n\n\n\nmake the README file with the instructions on how to contribute.\n\n\n\nRandom things that I need to remember\nTo add a new topic, create a folder in the appropriate folder, then go to first_semester/first_semester.yml and add the link and label under the appropriate section.\nRight now, only Katex is supported (the default on Quarto), but in case more functionalities are needed more complete (but cumbersome) latex implementations can be used"
+    "text": "To contribute to this website you can:\n\nUse GitHub, by accessing the repository at this link\nLet me know via at gabriele.pujatti@ut-capitle.fr\n\nIf you wish to contribute please follow these general guidelines:\n\n\n\n\n\n\nTip\n\n\n\nmake the README file with the instructions on how to contribute.\n\n\n\nRandom things that I need to remember\nTo add a new topic, create a folder in the appropriate folder, then go to first_semester/first_semester.yml and add the link and label under the appropriate section.\nRight now, only Katex is supported (the default on Quarto), but in case more functionalities are needed more complete (but cumbersome) latex implementations can be used"
   },
   {
     "objectID": "first_semester/econometrics_1/topic_1.html",
     "href": "first_semester/econometrics_1/topic_1.html",
     "title": "Topic 1",
     "section": "",
-    "text": "This is an example of a topic page, that can be used as a template."
+    "text": "Content",
+    "crumbs": [
+      "First Semester",
+      "Econometrics 1",
+      "Topic 1"
+    ]
   },
   {
     "objectID": "index.html",
@@ -40,5 +56,29 @@
     "title": "Home",
     "section": "",
     "text": "This website contains the notes for the M2 Economics Theory and Econometrics at TSE.\nThey are mainly maintained by me (Gabriele Pujatti) but everyone is more than welcome to contribute with corrections and expansions.\nThey have been last updated on XX/XX/XXXX\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "first_semester/econometrics_1/topic_1.html#subtitle",
+    "href": "first_semester/econometrics_1/topic_1.html#subtitle",
+    "title": "Topic 1",
+    "section": "Subtitle",
+    "text": "Subtitle\nContent",
+    "crumbs": [
+      "First Semester",
+      "Econometrics 1",
+      "Topic 1"
+    ]
+  },
+  {
+    "objectID": "first_semester/econometrics_1/topic_1.html#subtitle-1",
+    "href": "first_semester/econometrics_1/topic_1.html#subtitle-1",
+    "title": "Topic 1",
+    "section": "Subtitle",
+    "text": "Subtitle\nMore content",
+    "crumbs": [
+      "First Semester",
+      "Econometrics 1",
+      "Topic 1"
+    ]
   }
 ]

@@ -1,5 +1,6 @@
 ---
-title: Econometrics I
+title: Course Presentation
+subtitle: Econometrics I
 ---
 
 This file is supposed to include the general information about the Econometrics I course.

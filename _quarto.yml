@@ -18,6 +18,16 @@ website:
       - href: contribute.qmd
         text: Contribute
 
+  sidebar:
+    - title: First Semester
+      contents: 
+        - auto: first_semester
+
+    - title: Second Semester
+      contents: 
+        - auto: second_semester
+
+
 format:
   html:
     toc: true
