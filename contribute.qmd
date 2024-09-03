@@ -8,13 +8,8 @@ To contribute to this website you can:
 
 * Let me know via email at `gabriele.pujatti@ut-capitole.fr`
 
-If you wish to contribute please follow these general guidelines:
 
-::: {.callout-tip}
-make the README file with the instructions on how to contribute.
-:::
-
-# Random things that I need to remember
+### Some additional information
 
 To add a new topic, create a folder in the appropriate folder, then go to `first_semester/first_semester.yml` and add the link and label under the appropriate section.
 

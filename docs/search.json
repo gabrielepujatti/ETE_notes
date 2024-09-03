@@ -4,7 +4,7 @@
     "href": "first_semester/index.html",
     "title": "First Semester",
     "section": "",
-    "text": "Econometrics I\n\nProf Giovanni Giorgio\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nMicroeconomics I\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nMacroeconomics I\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nGame Theory\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nOptimization\n\nProf Giovanna Giorgia\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\nNo matching items",
+    "text": "Econometrics 1\n\nProf. Pascal Lavergne,\nProf. Stéphane Gregoir\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nMicroeconomics 1\n\nProf. Thomas Mariotti,\nProf. François Salanié\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nMacroeconomics 1\n\nProf. Fabrice Collard,\nProf. Christian Hellwig\n\n\n\nPresentation\nDynamic Stocastic Economies: Complete Markets\n\n\n\n\n\n\nGame Theory\n\nProf. Anna Sanktjohanser,\nSara Shahanaghi\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\n\nOptimization\n\nProf. David Martimort,\nProf. Thomas Mariotti\n\n\n\nPresentation\nTopic 1\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "First Semester"
     ]
@@ -36,7 +36,7 @@
     "href": "contribute.html",
     "title": "How to contribute",
     "section": "",
-    "text": "To contribute to this website you can:\n\nUse GitHub, by accessing the repository at this link\nLet me know via email at gabriele.pujatti@ut-capitole.fr\n\nIf you wish to contribute please follow these general guidelines:\n\n\n\n\n\n\nTip\n\n\n\nmake the README file with the instructions on how to contribute.\n\n\n\nRandom things that I need to remember\nTo add a new topic, create a folder in the appropriate folder, then go to first_semester/first_semester.yml and add the link and label under the appropriate section.\nRight now, only Katex is supported (the default on Quarto), but in case more functionalities are needed more complete (but cumbersome) latex implementations can be used"
+    "text": "To contribute to this website you can:\n\nUse GitHub, by accessing the repository at this link\nLet me know via email at gabriele.pujatti@ut-capitole.fr\n\n\nSome additional information\nTo add a new topic, create a folder in the appropriate folder, then go to first_semester/first_semester.yml and add the link and label under the appropriate section.\nRight now, only Katex is supported (the default on Quarto), but in case more functionalities are needed more complete (but cumbersome) latex implementations can be used"
   },
   {
     "objectID": "first_semester/econometrics_1/topic_1.html",
@@ -55,7 +55,7 @@
     "href": "index.html",
     "title": "Notes for Economic Theory and Econometrics",
     "section": "",
-    "text": "This website contains the notes for the M2 Economics Theory and Econometrics at TSE.\nThey are mainly maintained by me (Gabriele Pujatti) but everyone is more than welcome to contribute with corrections and expansions.\nThey have been last updated on XX/XX/XXXX\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This website contains the notes for the M2 Economics Theory and Econometrics at TSE.\nThey are mainly maintained by me (Gabriele Pujatti) but everyone is more than welcome to contribute with corrections and further explanations."
   },
   {
     "objectID": "first_semester/econometrics_1/topic_1.html#subtitle",
@@ -79,6 +79,18 @@
       "First Semester",
       "Econometrics 1",
       "Topic 1"
+    ]
+  },
+  {
+    "objectID": "first_semester/macroeconomics_1/topic_1_dse_complete_markets.html",
+    "href": "first_semester/macroeconomics_1/topic_1_dse_complete_markets.html",
+    "title": "Dynamic Stocastic Economies: Complete Markets",
+    "section": "",
+    "text": "Setup and Notation\nThe thing that matters for this part is the following:\n\nWhich notation is used to mean what\nWhich is the general model setup\nSummary of the assumptions that are explicitly and implicitly made, including why and with what consequences for generality of the conclusions.\n\n\nTime and Uncertainty\nWe use discrete time with infinite horizon (i.e. we sum, rather than integrate, over all possible periods). Using integration sometimes simplifies calculations, but since macro is increasingly computational (and computers work in discrete time) it is useful to be able to reason in this framework.\nRather than uncertainty we focus on risk. The difference between the two is that when we talk about risk we know what are the possible events that might materialize and know their distribution, while this is not the case for uncertainty, which includes some degree of missing information either w.r.t. the possible events, or their distribution.\nWe model this risk with an exogenous shock \\(\\omega\\).\n\n\\(\\omega_t\\) is used to indicate the shock that takes place at time \\(t\\),\n\\(\\omega^t\\) is used to indicate the history of shocks that materialized in all the periods up to time t, including it.\n\nThe succession relationship is denoted by \\(\\omega^{t+1} \\succ \\omega^t\\). At each time \\(t\\) a history has a unique predecessor, and many possible successors. We restrict the possible successors to be finite meaning at each time the possible shocks that may occur ar of a finite number in nature. This is a simplification to deal only with summations and avoid mixing summations and integrals.\n\n\n\nciao",
+    "crumbs": [
+      "First Semester",
+      "Macroeconomics 1",
+      "Dynamic Stocastic Economies: Complete Markets"
     ]
   }
 ]

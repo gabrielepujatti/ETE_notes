@@ -1,0 +1,29 @@
+---
+title: "Dynamic Stocastic Economies: Complete Markets"
+---
+
+# Setup and Notation
+
+The thing that matters for this part is the following:
+
++ Which notation is used to mean what
++ Which is the general model setup
++ Summary of the assumptions that are explicitly and implicitly made, including why and with what consequences for generality of the conclusions.
+
+### Time and Uncertainty
+
+We use discrete time with infinite horizon (i.e. we sum, rather than integrate, over all possible periods). Using integration sometimes simplifies calculations, but since macro is increasingly computational (and computers work in discrete time) it is useful to be able to reason in this framework.
+
+Rather than *uncertainty* we focus on *risk*. The difference between the two is that when we talk about risk we know what are the possible events that might materialize and know their distribution, while this is not the case for uncertainty, which includes some degree of missing information either w.r.t. the possible events, or their distribution.
+
+We model this risk with an exogenous shock $\omega$. 
+
++ $\omega_t$ is used to indicate the shock that takes place at time $t$,
++ $\omega^t$ is used to indicate the history of shocks that materialized in all the periods up to time t, including it.
+
+The succession relationship is denoted by $\omega^{t+1} \succ \omega^t$. At each time $t$ a history has a unique predecessor, and many possible successors. *We restrict the possible successors to be finite* meaning at each time the possible shocks that may occur ar of a finite number in nature. This is a simplification to deal only with summations and avoid mixing summations and integrals.
+
+![Example of a tree with three periods and 2 possible events](/figures/macro_01_01.png)
+
+To denote the probability that a history $\omega^t$ is reached, we use $\pi(\omega^t)$, which in turn is equal to the sum of the probabilities of all the possible realizations of $\omega^{t+1}$.
+

@@ -1,5 +1,6 @@
 - title: Econometrics 1
-  subtitle: Prof Giovanni Giorgio
+  subtitle: "Prof. Pascal Lavergne, \nProf. St\u00E9phane Gregoir"
+
   links:
     - text: Presentation
       href: econometrics_1/presentation.qmd
@@ -9,7 +10,7 @@
 
 
 - title: Microeconomics 1
-  subtitle: Prof Giovanna Giorgia
+  subtitle: "Prof. Thomas Mariotti, \nProf. Fran\u00E7ois Salani\u00E9"
   links:
     - text: Presentation
       href: microeconomics_1/presentation.qmd
@@ -19,17 +20,17 @@
 
 
 - title: Macroeconomics 1
-  subtitle: Prof Giovanna Giorgia
+  subtitle: "Prof. Fabrice Collard, \nProf. Christian Hellwig "
   links:
     - text: Presentation
       href: macroeconomics_1/presentation.qmd
-    - text: Topic 1
-      href: macroeconomics_1/topic_1.qmd
+    - text: "Dynamic Stocastic Economies: Complete Markets"
+      href: macroeconomics_1/topic_1_dse_complete_markets.qmd
 
 
 
 - title: Game Theory
-  subtitle: Prof Giovanna Giorgia
+  subtitle: "Prof. Anna Sanktjohanser,\nSara Shahanaghi"
   links:
     - text: Presentation
       href: game_theory/presentation.qmd
@@ -38,7 +39,7 @@
 
 
 - title: Optimization
-  subtitle: Prof Giovanna Giorgia
+  subtitle: "Prof. David Martimort,\nProf. Thomas Mariotti"
   links:
     - text: Presentation
       href: optimization/presentation.qmd
