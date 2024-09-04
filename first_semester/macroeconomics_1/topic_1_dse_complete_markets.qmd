@@ -1,7 +1,13 @@
 ---
 title: "Dynamic Stocastic Economies: Complete Markets"
 ---
+:::{.hidden}
+Put here all the TeX macros used across the document.
+$$
+\def\w{\omega}
+$$
 
+:::
 # Setup and Notation
 
 The thing that matters for this part is the following:
@@ -23,7 +29,65 @@ We model this risk with an exogenous shock $\omega$.
 
 The succession relationship is denoted by $\omega^{t+1} \succ \omega^t$. At each time $t$ a history has a unique predecessor, and many possible successors. *We restrict the possible successors to be finite* meaning at each time the possible shocks that may occur ar of a finite number in nature. This is a simplification to deal only with summations and avoid mixing summations and integrals.
 
-![Example of a tree with three periods and 2 possible events](/figures/macro_01_01.png)
+![Example of a tree with three periods and 2 possible events](figures/macro_01_01.png)
 
-To denote the probability that a history $\omega^t$ is reached, we use $\pi(\omega^t)$, which in turn is equal to the sum of the probabilities of all the possible realizations of $\omega^{t+1}$.
+To denote the probability that a history $\omega^t$ is reached, we use $\pi(\omega^t)$, which in turn is equal to the sum of the probabilities of all the possible realizations of $\omega^{t+1}$ such that $\omega^{t+1}\succ \omega^t$.
 
+This follows from bayes rule, and from the fact that $\omega^{t+1} = (\omega^t, \omega_{t+1})$.
+
+::: {.callout-note appearance="minimal" collapse="true"}
+## Proof
+
+We want to show that 
+
+$$
+\pi(\w^t) = \sum_{\w^{t+1}\succ \w^t} \pi(\w^{t+1})
+$$
+
+In order to do so, we replace the probability of the realization of a history at $t+1$ by its bayes rule definition, and we obtain:
+
+$$
+\pi(\w^t) = \sum_{\w^{t+1}\succ \w^t} \pi(\w^{t+1}|\w^t)\pi(\w^t)
+$$
+
+Since we are summing over all the possible successors of $\w^t$, the probability of $\w^t$ is constant, and can therefore be removed from the sum.
+
+$$
+\pi(\w^t) = \pi(\w^t)  \sum_{\w^{t+1}\succ \w^t} \pi(\w^{t+1}|\w^t)
+$$
+
+Now, we can observe that the sum sums to one, because we are summing the probability that $\w_{t+1}$ will realize, for all its possible realizations.
+:::
+
+The exogenous shock $\w_t$ is then split in two components:
++ $z^t$, the aggregate component (affects all individuals in the economy in the same way)
++ $s^t$, the idiosyncratic component (affects different agents in different ways)
+
+::: {.callout-important}
+#### Assumptions
+
+Assumption 1
+: The idiosyncratic and aggregate components are mutually independent:
+
+$$
+\pi(\w^t) = \pi_z(z^t)\pi_s(s^t)
+$$
+
+This assumption limits the generality of the analysis, and is a big semplification. It excludes that the distribution of the idiosyncratic shocks changes with the aggregate shock (which is often the case in the real world, think of the probability of losing a job during a recession).
+
+Assumption 2
+: We assume that the conditioning restriction holds separately for both the idiosyncratic and the aggregate shocks. This is:
+
+$$
+\pi_z(z^t) = \sum_{z^{t+1}\succ z^t} \pi_z(z^{t+1}) \text{ and } \pi_s(s^t) = \sum_{s^{t+1}\succ s^t} \pi_s(s^{t+1})
+$$
+
+Assumption 3
+: $\pi_s(s^t)$ represents at the same time the probability of history $s^t$ realizing and the cross-sectional share of the population at time $t$ that experiences $s^t$.
+
+Note that identifying the probability of a shock happening with the share of people who actually face it is not obvious. The two objects are not the same thing. However, by the law of large numbers, as the population size tends to infinity, the latter object converges to the former.
+:::
+
+### Preferences and Technologies
+
+There is a single consumption good

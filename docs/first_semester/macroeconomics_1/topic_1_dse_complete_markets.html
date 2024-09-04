@@ -316,6 +316,11 @@ window.Quarto = {
 </header>
 
 
+<div class="hidden">
+<p>Put here all the TeX macros used across the document. <span class="math display">\[
+\def\w{\omega}
+\]</span></p>
+</div>
 <section id="setup-and-notation" class="level1">
 <h1>Setup and Notation</h1>
 <p>The thing that matters for this part is the following:</p>
@@ -336,10 +341,78 @@ window.Quarto = {
 <p>The succession relationship is denoted by <span class="math inline">\(\omega^{t+1} \succ \omega^t\)</span>. At each time <span class="math inline">\(t\)</span> a history has a unique predecessor, and many possible successors. <em>We restrict the possible successors to be finite</em> meaning at each time the possible shocks that may occur ar of a finite number in nature. This is a simplification to deal only with summations and avoid mixing summations and integrals.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="macro_01_01.png" class="img-fluid figure-img"></p>
-<figcaption>ciao</figcaption>
+<p><img src="figures/macro_01_01.png" class="img-fluid figure-img"></p>
+<figcaption>Example of a tree with three periods and 2 possible events</figcaption>
 </figure>
 </div>
+<p>To denote the probability that a history <span class="math inline">\(\omega^t\)</span> is reached, we use <span class="math inline">\(\pi(\omega^t)\)</span>, which in turn is equal to the sum of the probabilities of all the possible realizations of <span class="math inline">\(\omega^{t+1}\)</span> such that <span class="math inline">\(\omega^{t+1}\succ \omega^t\)</span>.</p>
+<p>This follows from bayes rule, and from the fact that <span class="math inline">\(\omega^{t+1} = (\omega^t, \omega_{t+1})\)</span>.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>We want to show that</p>
+<p><span class="math display">\[
+\pi(\w^t) = \sum_{\w^{t+1}\succ \w^t} \pi(\w^{t+1})
+\]</span></p>
+<p>In order to do so, we replace the probability of the realization of a history at <span class="math inline">\(t+1\)</span> by its bayes rule definition, and we obtain:</p>
+<p><span class="math display">\[
+\pi(\w^t) = \sum_{\w^{t+1}\succ \w^t} \pi(\w^{t+1}|\w^t)\pi(\w^t)
+\]</span></p>
+<p>Since we are summing over all the possible successors of <span class="math inline">\(\w^t\)</span>, the probability of <span class="math inline">\(\w^t\)</span> is constant, and can therefore be removed from the sum.</p>
+<p><span class="math display">\[
+\pi(\w^t) = \pi(\w^t)  \sum_{\w^{t+1}\succ \w^t} \pi(\w^{t+1}|\w^t)
+\]</span></p>
+<p>Now, we can observe that the sum sums to one, because we are summing the probability that <span class="math inline">\(\w_{t+1}\)</span> will realize, for all its possible realizations.</p>
+</div>
+</div>
+</div>
+<p>The exogenous shock <span class="math inline">\(\w_t\)</span> is then split in two components: + <span class="math inline">\(z^t\)</span>, the aggregate component (affects all individuals in the economy in the same way) + <span class="math inline">\(s^t\)</span>, the idiosyncratic component (affects different agents in different ways)</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Assumptions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<dl>
+<dt>Assumption 1</dt>
+<dd>
+The idiosyncratic and aggregate components are mutually independent:
+</dd>
+</dl>
+<p><span class="math display">\[
+\pi(\w^t) = \pi_z(z^t)\pi_s(s^t)
+\]</span></p>
+<p>This assumption limits the generality of the analysis, and is a big semplification. It excludes that the distribution of the idiosyncratic shocks changes with the aggregate shock (which is often the case in the real world, think of the probability of losing a job during a recession).</p>
+<dl>
+<dt>Assumption 2</dt>
+<dd>
+We assume that the conditioning restriction holds separately for both the idiosyncratic and the aggregate shocks. This is:
+</dd>
+</dl>
+<p><span class="math display">\[
+\pi_z(z^t) = \sum_{z^{t+1}\succ z^t} \pi_z(z^{t+1}) \text{ and } \pi_s(s^t) = \sum_{s^{t+1}\succ s^t} \pi_s(s^{t+1})
+\]</span></p>
+</div>
+</div>
+<dl>
+<dt>Assumption 1</dt>
+<dd>
+the assumption made
+</dd>
+</dl>
 
 
 </section>
