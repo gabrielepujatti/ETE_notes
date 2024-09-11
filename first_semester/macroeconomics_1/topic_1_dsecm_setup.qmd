@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Stocastic Economies: Complete Markets"
+title: "DSE with Complete Markets: Model Setup"
 ---
 :::{.hidden}
 Put here all the TeX macros used across the document.

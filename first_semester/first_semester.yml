@@ -24,8 +24,8 @@
   links:
     - text: Presentation
       href: macroeconomics_1/presentation.qmd
-    - text: "Dynamic Stocastic Economies: Complete Markets"
-      href: macroeconomics_1/topic_1_dse_complete_markets.qmd
+    - text: "DSE with Complete Markets: Model Setup"
+      href: macroeconomics_1/topic_1_dsecm_setup.qmd
 
 
 
