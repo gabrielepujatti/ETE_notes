@@ -136,8 +136,8 @@ But since we have assumed that the shock $z^t$ is the same for all the type of h
 
 $$
 \begin{align*}
-N & = \sum_{z^t} \pi_s(z^t) N(z^t)//
-  & = \sum_{z^t} \pi_s(z^t) \sum_{j=1}^J \mu_j \sum_{s^t} \pi_s(s^t) \theta_j(w^t) n_j(w^t)
+N & = \sum_{z^t} \pi_s(z^t) N(z^t)\\
+  & = \sum_{z^t} \pi_z(z^t) \sum_{j=1}^J \mu_j \sum_{s^t} \pi_s(s^t) \theta_j(w^t) n_j(w^t)
 \end{align*}
 $$
 

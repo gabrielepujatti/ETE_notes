@@ -288,9 +288,15 @@ window.Quarto = {
    
   <ul>
   <li><a href="#setup-and-notation" id="toc-setup-and-notation" class="nav-link active" data-scroll-target="#setup-and-notation">Setup and Notation</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#time-and-uncertainty" id="toc-time-and-uncertainty" class="nav-link" data-scroll-target="#time-and-uncertainty">Time and Uncertainty</a></li>
-  <li><a href="#preferences-and-technologies" id="toc-preferences-and-technologies" class="nav-link" data-scroll-target="#preferences-and-technologies">Preferences and Technologies</a></li>
+  <li><a href="#preferences-and-technologies" id="toc-preferences-and-technologies" class="nav-link" data-scroll-target="#preferences-and-technologies">Preferences and Technologies</a>
+  <ul class="collapse">
+  <li><a href="#labor-supply" id="toc-labor-supply" class="nav-link" data-scroll-target="#labor-supply">Labor Supply</a></li>
+  <li><a href="#consumption" id="toc-consumption" class="nav-link" data-scroll-target="#consumption">Consumption</a></li>
+  <li><a href="#production-technology" id="toc-production-technology" class="nav-link" data-scroll-target="#production-technology">Production Technology</a></li>
+  <li><a href="#feasibility" id="toc-feasibility" class="nav-link" data-scroll-target="#feasibility">Feasibility</a></li>
+  </ul></li>
   <li><a href="#sum-up-of-the-restrictions" id="toc-sum-up-of-the-restrictions" class="nav-link" data-scroll-target="#sum-up-of-the-restrictions">Sum up of the restrictions</a></li>
   </ul></li>
   <li><a href="#the-central-planner-problem" id="toc-the-central-planner-problem" class="nav-link" data-scroll-target="#the-central-planner-problem">The Central Planner Problem</a></li>
@@ -457,8 +463,8 @@ N = \sum_{j=1}^J \mu_j \sum_{s^t}\sum_{z^t}  \pi_s(z^t)\pi_s(s^t) \theta_j(w^t) 
 <p>But since we have assumed that the shock <span class="math inline">\(z^t\)</span> is the same for all the type of households and is independent from the idiosyncratic shock, we can rewrite as:</p>
 <p><span class="math display">\[
 \begin{align*}
-N &amp; = \sum_{z^t} \pi_s(z^t) N(z^t)//
-  &amp; = \sum_{z^t} \pi_s(z^t) \sum_{j=1}^J \mu_j \sum_{s^t} \pi_s(s^t) \theta_j(w^t) n_j(w^t)
+N &amp; = \sum_{z^t} \pi_s(z^t) N(z^t)\\
+  &amp; = \sum_{z^t} \pi_z(z^t) \sum_{j=1}^J \mu_j \sum_{s^t} \pi_s(s^t) \theta_j(w^t) n_j(w^t)
 \end{align*}
 \]</span></p>
 <p>Hence we geth that the equation we have above, is just the labor supply when written as a function of the aggregate shock. This is useful because it allows to analyze the effect of economy-wide shocks.</p>
