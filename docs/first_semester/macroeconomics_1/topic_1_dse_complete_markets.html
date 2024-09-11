@@ -290,7 +290,10 @@ window.Quarto = {
   <li><a href="#setup-and-notation" id="toc-setup-and-notation" class="nav-link active" data-scroll-target="#setup-and-notation">Setup and Notation</a>
   <ul class="collapse">
   <li><a href="#time-and-uncertainty" id="toc-time-and-uncertainty" class="nav-link" data-scroll-target="#time-and-uncertainty">Time and Uncertainty</a></li>
+  <li><a href="#preferences-and-technologies" id="toc-preferences-and-technologies" class="nav-link" data-scroll-target="#preferences-and-technologies">Preferences and Technologies</a></li>
+  <li><a href="#sum-up-of-the-restrictions" id="toc-sum-up-of-the-restrictions" class="nav-link" data-scroll-target="#sum-up-of-the-restrictions">Sum up of the restrictions</a></li>
   </ul></li>
+  <li><a href="#the-central-planner-problem" id="toc-the-central-planner-problem" class="nav-link" data-scroll-target="#the-central-planner-problem">The Central Planner Problem</a></li>
   </ul>
 </nav>
     </div>
@@ -405,17 +408,157 @@ We assume that the conditioning restriction holds separately for both the idiosy
 <p><span class="math display">\[
 \pi_z(z^t) = \sum_{z^{t+1}\succ z^t} \pi_z(z^{t+1}) \text{ and } \pi_s(s^t) = \sum_{s^{t+1}\succ s^t} \pi_s(s^{t+1})
 \]</span></p>
-</div>
-</div>
 <dl>
-<dt>Assumption 1</dt>
+<dt>Assumption 3</dt>
 <dd>
-the assumption made
+<span class="math inline">\(\pi_s(s^t)\)</span> represents at the same time the probability of history <span class="math inline">\(s^t\)</span> realizing and the cross-sectional share of the population at time <span class="math inline">\(t\)</span> that experiences <span class="math inline">\(s^t\)</span>.
 </dd>
 </dl>
-
-
+<p>Note that identifying the probability of a shock happening with the share of people who actually face it is not obvious. The two objects are not the same thing. However, by the law of large numbers, as the population size tends to infinity, the latter object converges to the former.</p>
+</div>
+</div>
 </section>
+<section id="preferences-and-technologies" class="level3">
+<h3 class="anchored" data-anchor-id="preferences-and-technologies">Preferences and Technologies</h3>
+<ul>
+<li>There is a single consumption good, works both as consumption good and as capital.</li>
+<li><span class="math inline">\(J\)</span> Classes of households (indexed with <span class="math inline">\(j = 1, ..., J\)</span>)</li>
+<li>Each class is composed by <span class="math inline">\(\mu_j\)</span> agents</li>
+<li>A von-Neumann Morgenstern utility function describes the preferences towards consumption and leisure for each agent:</li>
+</ul>
+<p><span class="math display">\[
+\mathcal{U} \left( \{ c_j(\cdot), \ell_j(\cdot) \} \right) =
+\sum_{t=0}^{\infty} \beta^t \sum_{\omega^t} \pi(\omega^t) \tilde{u}(c_j(\omega^t), \ell_j(\omega^t))
+\]</span></p>
+<p>There are a few interesting elements:</p>
+<ul>
+<li><span class="math inline">\(\beta\)</span> is the discount factor. It is constant over time over an infinite time horizon. This comes with some assumptions: for example, if we interpret the infinite time horizon as multiple generations of parents caring for their children, we are assuming that all the members of the family care about the future and the life of their heirs in the same way. Moreover, we are assuming no taxation on inheritance.</li>
+<li><span class="math inline">\(\pi(w^t)\)</span> is just the probability that each history ralizes, and it is then multiplied by the utility the individual gets, in that history, from consumption and leisure.
+<ul>
+<li>Utility is increasing and concave in both consumption and leisure, and satisfies the Inada conditions: as <span class="math inline">\(c\)</span> or <span class="math inline">\(l\)</span> tend to zero, the marginal utility they provide goes to infinity, while as they go to infinity, their marginal utility goes to zero.</li>
+</ul></li>
+</ul>
+<p>Rather than using <span class="math inline">\(l_j\)</span> for leisure, it is better to use <span class="math inline">\(n_j = \bar T - l_j\)</span>, that is the labor supply. (<span class="math inline">\(\bar T\)</span> is the total labor endowment).</p>
+<p>The inada conditions that describe how utility reacts to labor supply are not the same as for leisure: utility is decreasing and concave in <span class="math inline">\(n_j\)</span>, thus the marginal disutility from an extra hour of work increases with the labor suppy.</p>
+<p><span class="math display">\[
+\lim_{n\to0}\frac{\partial u(c,n)}{\partial n}=0, \lim_{n\to\overline{T}}\frac{\partial u(c,n)}{\partial n}=-\infty
+\]</span></p>
+<p>What we are interested in is the aggregate consumption and labor behavior.</p>
+<section id="labor-supply" class="level4">
+<h4 class="anchored" data-anchor-id="labor-supply">Labor Supply</h4>
+<p>For labor we get:</p>
+<p><span class="math display">\[
+N(z^t) = \sum_{j=1}^J \mu_j \sum_{s^t} \pi_s(s^t) \theta_j(w^t) n_j(w^t)
+\]</span></p>
+<p><strong>Interpretation</strong>: The first sum just tells that we are considering all types, and for each type we take into account the share of the population of the corresponding type. The second sum is a sum over all the possible idiosyncratic shocks. To understand this we have to recall that: <span class="math inline">\(\pi(\w^t) = \pi_s(s^t)\pi_z(z^t)\)</span>.</p>
+<p>The total expected labor supply (not as a function of <span class="math inline">\(z^t\)</span> as we have it above) is: <span class="math display">\[
+N = \sum_{j=1}^J \mu_j \sum_{s^t}\sum_{z^t}  \pi_s(z^t)\pi_s(s^t) \theta_j(w^t) n_j(w^t)
+\]</span></p>
+<p>But since we have assumed that the shock <span class="math inline">\(z^t\)</span> is the same for all the type of households and is independent from the idiosyncratic shock, we can rewrite as:</p>
+<p><span class="math display">\[
+\begin{align*}
+N &amp; = \sum_{z^t} \pi_s(z^t) N(z^t)//
+  &amp; = \sum_{z^t} \pi_s(z^t) \sum_{j=1}^J \mu_j \sum_{s^t} \pi_s(s^t) \theta_j(w^t) n_j(w^t)
+\end{align*}
+\]</span></p>
+<p>Hence we geth that the equation we have above, is just the labor supply when written as a function of the aggregate shock. This is useful because it allows to analyze the effect of economy-wide shocks.</p>
+<p><span class="math inline">\(\theta_j(\w^t)\)</span> is our way of implementing heterogeneity in the model. This heterogeneity is modelled as a type and history contingent shock to labor productivity (e.g.&nbsp;type <span class="math inline">\(k\)</span> does not produce when it rains (<span class="math inline">\(z^t\)</span>) or their dog is sick (<span class="math inline">\(s^t\)</span>)).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is very important to notice that the heterogeneity is inserted only in the labor supply function, and not in the consumption function (for example) this will have consequences relating why the various agents behave in the same way with respect to some things and in different ways with respect to others.</p>
+</div>
+</div>
+</section>
+<section id="consumption" class="level4">
+<h4 class="anchored" data-anchor-id="consumption">Consumption</h4>
+<p>Aggregate consumption is</p>
+<p><span class="math display">\[
+C(z^t) = \sum_{j=1}^J \mu_j \sum_{s^t} \pi_s(s^t) c_j(w^t)
+\]</span></p>
+<p>This is a function of the aggregate shock exactly for the same reason why the labor supply is.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Actually, the consumption function here is allowed to be different for the various types of agents (there is a <span class="math inline">\(j\)</span> index under <span class="math inline">\(c(w^t)\)</span>). Think about this later, when solving the central planner problem.</p>
+</div>
+</div>
+</section>
+<section id="production-technology" class="level4">
+<h4 class="anchored" data-anchor-id="production-technology">Production Technology</h4>
+<p>The final production good is produced using constant returns to scale (note that this si a pretty strong assumption).</p>
+<p>The Neo-classical production function used is:</p>
+<p><span class="math display">\[
+A(z^t) F(K(z^{t-1}), N(z^t))
+\]</span></p>
+<p>Where <span class="math inline">\(F(\cdot, \cdot)\)</span> is increasing and concave in its arguments, satisfying usual Inada conditions (as K or N go to zero their marginal product goes to infinity and vice versa).</p>
+<p>The <strong>decision for capital available at time <span class="math inline">\(t\)</span> is taken at <span class="math inline">\(t-1\)</span></strong>. This is why, in the production function <span class="math inline">\(K\)</span> is a function of <span class="math inline">\(z_{t-1}\)</span>. A stark consequence is that there are intertemporal decision to be taken, thus we will have an intertemporal optimization problem to solve.</p>
+<p><span class="math inline">\(A(z_t)\)</span> is the aggregate TFP (Total Factor Productivity) which is exogenously determined. An increase in A means that the same amount of labor and capital can now produce higher output.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a weakness of the model: we have to instert something that will trigger a business cycle exogenously, because we are not able to have and endogenizeable explanation for this kind of shocks.</p>
+</div>
+</div>
+<p>The evolution of the capital stock follows the law of permanent inventory: <span class="math display">\[
+K(z^t)-K(z^{t-1})=I(z^t)-\delta K(z^{t-1})
+\]</span> Which means that the change in capital is equal to the additional investments made at time <span class="math inline">\(t\)</span> minus the amount of capital lost to depreciation.</p>
+<p>Here we make a big assumption that the depreciation rate is constant. There has been a big debate (Cambridge Capital Controversy) on wether aggregate capital actually exists. The neoclassical theory (that is the one that we end up following in this course) agrees that it is possible to define aggregate capital, and thus have a unique depreciation rate.</p>
+<p>In using a constant <span class="math inline">\(\delta\)</span> we are making a trade off as we are assuming that in each period we consume the capital by the same amount. + This is ok if we are interested in the long run: on average we consume the capital by the same amount each year, thus it does not really matter if one year is a bit more and another a bit less. The semplification helps a lot. + This is not ok if we are interested in the short run: in years of economic boom production is higher, so capital is used more, and thus is reasonable that it gets consumed more. The fact that during booms capital is consumed more than during recessions should not be neglected, because some relevant dynamics can arise from this.</p>
+<p><strong>Terminology</strong>: <span class="math inline">\(I(z^t)\)</span> is the gross investment, while <span class="math inline">\(I(z^t) - \delta K(z^{t-1})\)</span> is the net investment.</p>
+</section>
+<section id="feasibility" class="level4">
+<h4 class="anchored" data-anchor-id="feasibility">Feasibility</h4>
+<p>Feasibility is the consraint by which the total amount consumed and the total amount invested must be lower than the total output of the economy.</p>
+<p><span class="math display">\[
+C(z^t) + I(z^t) \leq A(z^t) F(K(z^{t-1}), N(z^t))
+\]</span></p>
+</section>
+</section>
+<section id="sum-up-of-the-restrictions" class="level3">
+<h3 class="anchored" data-anchor-id="sum-up-of-the-restrictions">Sum up of the restrictions</h3>
+<ol type="1">
+<li><p>Shocks can affect only labor and aggregate productivity (<span class="math inline">\(\theta\)</span> and <span class="math inline">\(A\)</span>). This excludes shocks to preferences, endowments, depreciation, etc. They are implemented in extensions of the model.</p></li>
+<li><p>The economy has a single sector. One good is produced and consumed, this same good is effortlessly converted into capital.</p></li>
+<li><p>There is one single aggregate production function, but potentially it is possible to extend this model to look better into the dynamics of the production side of the economy.</p></li>
+</ol>
+</section>
+</section>
+<section id="the-central-planner-problem" class="level1">
+<h1>The Central Planner Problem</h1>
+<p><span class="math display">\[
+\mathcal{U} \left( \left( c_j(\cdot), n_j(\cdot) \right)_{j=1}^J \right) =
+\sum_{j=1}^{J} \psi_j \sum_{t=0}^{\infty} \sum_{\omega^t} \beta^t \pi(\omega^t) u \left( c_j(\omega^t), n_j(\omega^t) \right)
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\psi_j\)</span> is the weight that the planner gives to the various groups. These can be all ones (utilitarian function) or different values, to embed different welfare functions.</li>
+</ul>
+<p><span class="math display">\[
+N(z^t) = \sum_{j=1}^J \mu_j \sum_{s^t} \pi_s(s^t) \theta_j(w^t) n_j(w^t)
+\]</span></p>
+
+
 </section>
 
 </main> <!-- /main -->
