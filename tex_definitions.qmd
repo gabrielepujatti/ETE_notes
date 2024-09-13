@@ -1,0 +1,6 @@
+::: {.hidden}
+$$
+\def\w{\omega}
+\def\R{\mathbb{R}}
+$$
+:::

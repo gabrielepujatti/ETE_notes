@@ -1,0 +1,36 @@
+---
+title: Production
+---
+
+{{< include //tex_definitions.qmd >}}
+
+This chapter is about production units (i.e. firms), focusing on what they *can do* (the production set) and how they do it *maximizing profits*.
+
+Production vector
+: is a vector $y \in \R^L$, where L is the total number of goods in the economy. It includes both the inputs and the outputs of a transformation process.
+
+By convention, in the production vector negative numbers represent inputs and positive are outputs. Zeros are used for goods that are not concerned in the production process.
+
+::: {.callout-note}
+Goods are defined in a time and place, so for example transporting an apple for turin to toulouse would mean using a vehicle and an apple in turin as input and and getting a vehicle and an apple in toulouse as an output.
+:::
+
+Production set
+: is the set of all the production vectors that are technologically feasible. The notation is $Y \subset \R^L$.
+
+Any $y$ that belongs to $Y$ is feasible, while those that don't belong to the production set are not.
+
+Transformation function
+: A function $F(\cdot)$ is useful to describe the production set.
+
+![Transformation Function](figures/transformation_function.drawio.png)
+
+Marginar Rate of Transformation
+: For two commodities $l$ and $k$ in a production vector $\bar y$ that satisfies $F(\bar y) = 0$ (that means that the vector is on the transformation frontier) is defined as:
+
+$$
+MRT_{lk}(\bar{y}) = \frac{\partial F(\bar{y})/\partial y_l}{\partial F(\bar{y})/\partial y_k}
+$$
+
+This holds when $F(\cdot)$ is differentiable at $\bar y$. This tells you how much more of good $l$ you can produce by giving up an extra unit of good $k$.
+

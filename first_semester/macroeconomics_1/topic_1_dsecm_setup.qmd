@@ -1,13 +1,9 @@
 ---
 title: "DSE with Complete Markets: Model Setup"
 ---
-:::{.hidden}
-Put here all the TeX macros used across the document.
-$$
-\def\w{\omega}
-$$
 
-:::
+{{< include //tex_definitions.qmd >}}
+
 # Setup and Notation
 
 The thing that matters for this part is the following:
