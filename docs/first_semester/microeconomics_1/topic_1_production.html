@@ -282,8 +282,19 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#production-sets" id="toc-production-sets" class="nav-link active" data-scroll-target="#production-sets">Production Sets</a>
+  <ul>
+  <li><a href="#technologies-with-distinct-inputs-and-outputs" id="toc-technologies-with-distinct-inputs-and-outputs" class="nav-link" data-scroll-target="#technologies-with-distinct-inputs-and-outputs">Technologies with distinct inputs and outputs</a></li>
+  <li><a href="#properties-of-production-sets" id="toc-properties-of-production-sets" class="nav-link" data-scroll-target="#properties-of-production-sets">Properties of production sets</a></li>
+  <li><a href="#profit-maximization-and-cost-minimization" id="toc-profit-maximization-and-cost-minimization" class="nav-link" data-scroll-target="#profit-maximization-and-cost-minimization">Profit Maximization and Cost Minimization</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -314,6 +325,8 @@ window.Quarto = {
 \]</span></p>
 </div>
 <p>This chapter is about production units (i.e.&nbsp;firms), focusing on what they <em>can do</em> (the production set) and how they do it <em>maximizing profits</em>.</p>
+<section id="production-sets" class="level1">
+<h1>Production Sets</h1>
 <dl>
 <dt>Production vector</dt>
 <dd>
@@ -356,15 +369,105 @@ A function <span class="math inline">\(F(\cdot)\)</span> is useful to describe t
 <dl>
 <dt>Marginar Rate of Transformation</dt>
 <dd>
-for two commodities <span class="math inline">\(l\)</span> and <span class="math inline">\(k\)</span> in a production vector <span class="math inline">\(\bar y\)</span> that satisfies <span class="math inline">\(F(\bar y) = 0\)</span> (that means that the vector is on the transformation frontier) is defined as:
+For two commodities <span class="math inline">\(l\)</span> and <span class="math inline">\(k\)</span> in a production vector <span class="math inline">\(\bar y\)</span> that satisfies <span class="math inline">\(F(\bar y) = 0\)</span> (that means that the vector is on the transformation frontier) is defined as:
 </dd>
 </dl>
 <p><span class="math display">\[
 MRT_{lk}(\bar{y}) = \frac{\partial F(\bar{y})/\partial y_l}{\partial F(\bar{y})/\partial y_k}
 \]</span></p>
-<p>This holds when <span class="math inline">\(F(\cdot)\)</span> is differentiable at <span class="math inline">\(\bar y\)</span>.</p>
+<p>This holds when <span class="math inline">\(F(\cdot)\)</span> is differentiable at <span class="math inline">\(\bar y\)</span>. This tells you how much more of good <span class="math inline">\(l\)</span> you can produce by giving up an extra unit of good <span class="math inline">\(k\)</span>.</p>
+<section id="technologies-with-distinct-inputs-and-outputs" class="level2">
+<h2 class="anchored" data-anchor-id="technologies-with-distinct-inputs-and-outputs">Technologies with distinct inputs and outputs</h2>
+<p>The notation is kind of made more intuitive when the outputs and the inputs are different goods (which is almost always the case since goods don’t only have a material dimension but they are also defined relative to space and time).</p>
+<ul>
+<li><span class="math inline">\(z\)</span> is the vector of inputs, and now they are inserted as positive values</li>
+<li><span class="math inline">\(q\)</span> is the vector of outputs</li>
+</ul>
+<p>The dimensions of the two vectors are such that when summed they are <span class="math inline">\(L\)</span>.</p>
+<p>For a given vector of outputs <span class="math inline">\(q\)</span>, we can define the marginal rate of technological substitution <span class="math inline">\(MRTS_{lk}\)</span></p>
+<dl>
+<dt>Marginal Rate of Technological Substitution</dt>
+<dd>
+Indicates the extra amount of input <span class="math inline">\(l\)</span> that is needed to replace a unit of input <span class="math inline">\(k\)</span>, while maintaining the output unchanged.
+</dd>
+</dl>
+<p><span class="math display">\[
+MRTS_{lk}(\bar{z}) = \frac{\partial f(\bar{z})/\partial z_l}{\partial f(\bar{z})/\partial z_k}
+\]</span></p>
+<p>This is just a renaming for the MRT in the case in which there are multiple inputs and just one output.</p>
+</section>
+<section id="properties-of-production-sets" class="level2">
+<h2 class="anchored" data-anchor-id="properties-of-production-sets">Properties of production sets</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These properties are not to be intended as part of the definition of production set. Some production sets have some of these properties, some have others. Overall, some are even mutually exclusive.</p>
+</div>
+</div>
+<ol class="example" type="1">
+<li><p><strong>The set <span class="math inline">\(Y\)</span> is non-empty</strong>. If the technology does not make anything, it is not interesting to study.</p></li>
+<li><p><strong>The set <span class="math inline">\(Y\)</span> is closed</strong>, that means that it includes its boundaries. This is just a technical assumtpions that tells us that the limit of of a sequence of technologically feasible inputs and outputs is technologically feasible. The technological frontier is part of the production set.</p></li>
+<li><p><strong>There is no free lunch</strong>, if a production plan creates some output, it must use some input. If <span class="math inline">\(y\in Y\)</span> and <span class="math inline">\(y\geq 0\)</span> then <span class="math inline">\(y = 0\)</span></p></li>
+<li><p><strong>Possibility of inaction</strong>, means that complete shutdown is possible, i.e.&nbsp;<span class="math inline">\(0 \in Y\)</span>. Note that this properties might not be satisfied by some production sets. For example if the firm already paid some fixed costs, then even if it does not produce any output the production plan <span class="math inline">\(y=0\)</span> is not available (since the costs have been paid).</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/inaction.drawio.png" class="img-fluid figure-img"></p>
+<figcaption>Possibility of inaction vs.&nbsp;Fixed costs</figcaption>
+</figure>
+</div>
+<ol start="5" class="example" type="1">
+<li><p><strong>Free disposal</strong>. This property states that one could use more inputs than needed to produce a given quantity of output. If we have <span class="math inline">\(y' \leq y\)</span> such that <span class="math inline">\(y'\)</span> uses at least the same amount of inputs to produce at most the same amount of output, then <span class="math inline">\(y' \in y\)</span>.</p></li>
+<li><p><strong>Irreversibility</strong>. If <span class="math inline">\(y \in Y\)</span> and <span class="math inline">\(y\neq 0\)</span>, then <span class="math inline">\(-y \notin Y\)</span>. This states that once some inputs are produced to make some output, it is not possible to inverse the process to get the same inputs back.</p></li>
+<li><p><strong>Returns to scale</strong>. They can be increasing, decreasing, or constant.</p>
+<ol type="i">
+<li><em>Decreasing returns to scale</em>: for all <span class="math inline">\(y \in Y,\ \ \forall\alpha \in [0,1]\)</span> we have that <span class="math inline">\(\alpha y \in Y\)</span>. Note that this definition is not super precise, as it enompasses also constant return to scale, it is better called non-increasing RTS.</li>
+<li><em>Increasing returns to scale</em>: for all <span class="math inline">\(y \in Y,\ \ \forall\alpha \geq 1\)</span> we have that <span class="math inline">\(\alpha y \in Y\)</span>. Note that this definition is not super precise, as it enompasses also constant return to scale, it is better called non-decreasing RTS.</li>
+<li><em>Constant returns to scale</em>: This property holds when the RTS are both non-increasing and non-decreasing, hence when the production frontier is in a straight line.</li>
+</ol></li>
+<li><p><strong>Additivity</strong> (or free entry), means that for any two possible production plans, their sum belongs to the production set. <span class="math inline">\(Y + Y \subset Y\)</span>. The idea is that if two plans are possible, then it is possible to set up two plants and perform both of them. Note that this is not always the case.</p></li>
+<li><p><strong>Convexity</strong> states that if <span class="math inline">\(y\inY\)</span> and <span class="math inline">\(y'\in Y\)</span> then <span class="math inline">\(\alpha y + (1-\alpha)y' \in Y\ \forall \alpha \in [0,1]\)</span></p></li>
+</ol>
+<p>Putting together the assumption of convexity and constant returns to scale, we get that <span class="math inline">\(Y\)</span> is a convex cone. A nice property of convex cones is that increasing a single input yields decreasing marginal returns, but increasing all of them in a proportional way yields constant returns to scale.</p>
+</section>
+<section id="profit-maximization-and-cost-minimization" class="level2">
+<h2 class="anchored" data-anchor-id="profit-maximization-and-cost-minimization">Profit Maximization and Cost Minimization</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Assumptions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The firm is price taking: the vector of prices <span class="math inline">\(p = (p_1, ..., p_L) \gg 0\)</span> does not depend on the production plans of the firms.</li>
+<li>The firm’s objective is to maximize profits.</li>
+<li>We assume that <span class="math inline">\(Y\)</span> satisfies nonemptiness, closedness, and free disposal.</li>
+</ul>
+</div>
+</div>
+<p>The profit maximization problem is:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\underset{y}{Max} \ &amp;p\cdot y \\
+&amp;s.t. \ y\in Y
+\end{aligned}
+\]</span></p>
+<p>The constraint can be also written as <span class="math inline">\(F(y) \leq 0\)</span>.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

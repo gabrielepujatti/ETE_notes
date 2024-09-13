@@ -110,7 +110,7 @@
     "href": "first_semester/microeconomics_1/topic_1_production.html",
     "title": "Production",
     "section": "",
-    "text": "\\[\n\\def\\w{\\omega}\n\\def\\R{\\mathbb{R}}\n\\]\n\nThis chapter is about production units (i.e. firms), focusing on what they can do (the production set) and how they do it maximizing profits.\n\nProduction vector\n\nis a vector \\(y \\in \\R^L\\), where L is the total number of goods in the economy. It includes both the inputs and the outputs of a transformation process.\n\n\nBy convention, in the production vector negative numbers represent inputs and positive are outputs. Zeros are used for goods that are not concerned in the production process.\n\n\n\n\n\n\nNote\n\n\n\nGoods are defined in a time and place, so for example transporting an apple for turin to toulouse would mean using a vehicle and an apple in turin as input and and getting a vehicle and an apple in toulouse as an output.\n\n\n\nProduction set\n\nis the set of all the production vectors that are technologically feasible. The notation is \\(Y \\subset \\R^L\\).\n\n\nAny \\(y\\) that belongs to \\(Y\\) is feasible, while those that don’t belong to the production set are not.\n\nTransformation function\n\nA function \\(F(\\cdot)\\) is useful to describe the production set.\n\n\n\n\n\nTransformation Function\n\n\n\nMarginar Rate of Transformation\n\nfor two commodities \\(l\\) and \\(k\\) in a production vector \\(\\bar y\\) that satisfies \\(F(\\bar y) = 0\\) (that means that the vector is on the transformation frontier) is defined as:\n\n\n\\[\nMRT_{lk}(\\bar{y}) = \\frac{\\partial F(\\bar{y})/\\partial y_l}{\\partial F(\\bar{y})/\\partial y_k}\n\\]\nThis holds when \\(F(\\cdot)\\) is differentiable at \\(\\bar y\\).",
+    "text": "\\[\n\\def\\w{\\omega}\n\\def\\R{\\mathbb{R}}\n\\]\nThis chapter is about production units (i.e. firms), focusing on what they can do (the production set) and how they do it maximizing profits.",
     "crumbs": [
       "First Semester",
       "Microeconomics 1",
@@ -135,5 +135,41 @@
     "title": "ETE Notes",
     "section": "",
     "text": "\\[\n\\def\\w{\\omega}\n\\def\\R{\\mathbb{R}}\n\\]"
+  },
+  {
+    "objectID": "first_semester/microeconomics_1/topic_1_production.html#technologies-with-distinct-inputs-and-outputs",
+    "href": "first_semester/microeconomics_1/topic_1_production.html#technologies-with-distinct-inputs-and-outputs",
+    "title": "Production",
+    "section": "Technologies with distinct inputs and outputs",
+    "text": "Technologies with distinct inputs and outputs\nThe notation is kind of made more intuitive when the outputs and the inputs are different goods (which is almost always the case since goods don’t only have a material dimension but they are also defined relative to space and time).\n\n\\(z\\) is the vector of inputs, and now they are inserted as positive values\n\\(q\\) is the vector of outputs\n\nThe dimensions of the two vectors are such that when summed they are \\(L\\).\nFor a given vector of outputs \\(q\\), we can define the marginal rate of technological substitution \\(MRTS_{lk}\\)\n\nMarginal Rate of Technological Substitution\n\nIndicates the extra amount of input \\(l\\) that is needed to replace a unit of input \\(k\\), while maintaining the output unchanged.\n\n\n\\[\nMRTS_{lk}(\\bar{z}) = \\frac{\\partial f(\\bar{z})/\\partial z_l}{\\partial f(\\bar{z})/\\partial z_k}\n\\]\nThis is just a renaming for the MRT in the case in which there are multiple inputs and just one output.",
+    "crumbs": [
+      "First Semester",
+      "Microeconomics 1",
+      "Production"
+    ]
+  },
+  {
+    "objectID": "first_semester/microeconomics_1/topic_1_production.html#properties-of-production-sets",
+    "href": "first_semester/microeconomics_1/topic_1_production.html#properties-of-production-sets",
+    "title": "Production",
+    "section": "Properties of production sets",
+    "text": "Properties of production sets\n\n\n\n\n\n\nWarning\n\n\n\nThese properties are not to be intended as part of the definition of production set. Some production sets have some of these properties, some have others. Overall, some are even mutually exclusive.\n\n\n\nThe set \\(Y\\) is non-empty. If the technology does not make anything, it is not interesting to study.\nThe set \\(Y\\) is closed, that means that it includes its boundaries. This is just a technical assumtpions that tells us that the limit of of a sequence of technologically feasible inputs and outputs is technologically feasible. The technological frontier is part of the production set.\nThere is no free lunch, if a production plan creates some output, it must use some input. If \\(y\\in Y\\) and \\(y\\geq 0\\) then \\(y = 0\\)\nPossibility of inaction, means that complete shutdown is possible, i.e. \\(0 \\in Y\\). Note that this properties might not be satisfied by some production sets. For example if the firm already paid some fixed costs, then even if it does not produce any output the production plan \\(y=0\\) is not available (since the costs have been paid).\n\n\n\n\nPossibility of inaction vs. Fixed costs\n\n\n\nFree disposal. This property states that one could use more inputs than needed to produce a given quantity of output. If we have \\(y' \\leq y\\) such that \\(y'\\) uses at least the same amount of inputs to produce at most the same amount of output, then \\(y' \\in y\\).\nIrreversibility. If \\(y \\in Y\\) and \\(y\\neq 0\\), then \\(-y \\notin Y\\). This states that once some inputs are produced to make some output, it is not possible to inverse the process to get the same inputs back.\nReturns to scale. They can be increasing, decreasing, or constant.\n\nDecreasing returns to scale: for all \\(y \\in Y,\\ \\ \\forall\\alpha \\in [0,1]\\) we have that \\(\\alpha y \\in Y\\). Note that this definition is not super precise, as it enompasses also constant return to scale, it is better called non-increasing RTS.\nIncreasing returns to scale: for all \\(y \\in Y,\\ \\ \\forall\\alpha \\geq 1\\) we have that \\(\\alpha y \\in Y\\). Note that this definition is not super precise, as it enompasses also constant return to scale, it is better called non-decreasing RTS.\nConstant returns to scale: This property holds when the RTS are both non-increasing and non-decreasing, hence when the production frontier is in a straight line.\n\nAdditivity (or free entry), means that for any two possible production plans, their sum belongs to the production set. \\(Y + Y \\subset Y\\). The idea is that if two plans are possible, then it is possible to set up two plants and perform both of them. Note that this is not always the case.\nConvexity states that if \\(y\\inY\\) and \\(y'\\in Y\\) then \\(\\alpha y + (1-\\alpha)y' \\in Y\\ \\forall \\alpha \\in [0,1]\\)\n\nPutting together the assumption of convexity and constant returns to scale, we get that \\(Y\\) is a convex cone. A nice property of convex cones is that increasing a single input yields decreasing marginal returns, but increasing all of them in a proportional way yields constant returns to scale.",
+    "crumbs": [
+      "First Semester",
+      "Microeconomics 1",
+      "Production"
+    ]
+  },
+  {
+    "objectID": "first_semester/microeconomics_1/topic_1_production.html#profit-maximization-and-cost-minimization",
+    "href": "first_semester/microeconomics_1/topic_1_production.html#profit-maximization-and-cost-minimization",
+    "title": "Production",
+    "section": "Profit Maximization and Cost Minimization",
+    "text": "Profit Maximization and Cost Minimization\n\n\n\n\n\n\nAssumptions\n\n\n\n\nThe firm is price taking: the vector of prices \\(p = (p_1, ..., p_L) \\gg 0\\) does not depend on the production plans of the firms.\nThe firm’s objective is to maximize profits.\nWe assume that \\(Y\\) satisfies nonemptiness, closedness, and free disposal.\n\n\n\nThe profit maximization problem is:\n\\[\n\\begin{aligned}\n\\underset{y}{Max} \\ &p\\cdot y \\\\\n&s.t. \\ y\\in Y\n\\end{aligned}\n\\]\nThe constraint can be also written as \\(F(y) \\leq 0\\).",
+    "crumbs": [
+      "First Semester",
+      "Microeconomics 1",
+      "Production"
+    ]
   }
 ]
