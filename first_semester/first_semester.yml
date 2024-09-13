@@ -1,4 +1,7 @@
 - title: Econometrics 1
+  resources: 
+    - microeconomics_1/figures/*
+    - macroeconomics_1/figures/*
   subtitle: "Prof. Pascal Lavergne, \nProf. St\u00E9phane Gregoir"
 
   links:
